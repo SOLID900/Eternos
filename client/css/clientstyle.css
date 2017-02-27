@@ -1,0 +1,14 @@
+body {
+    font-family:monospace;
+}
+
+.chat-element
+{
+    border-bottom: 1px solid black;
+}
+
+#chat-body
+{
+    height: 50vh;
+    overflow-y: scroll;
+}

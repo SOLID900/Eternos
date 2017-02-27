@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parlote</title>
+
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/linkifyjs/linkify.min.js"></script>
+    <script type="text/javascript" src="/linkifyjs/linkify-html.min.js"></script>
+    <script type="text/javascript" src="/linkifyjs/linkify-jquery.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/clientstyle.css">
+
+    <style>
+        #messageArea
+        {
+            display: none;
+        }
+
+        #messageForm
+        {
+            width: 100%;
+        }
+
+        #usernameForm
+        {
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Parlote</h1>
+
+        <div class="row" id="usernameArea">
+            <div class="col-md-offset-4 col-md-6">
+                <form id="usernameForm" class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username-input" autocomplete="off" placeholder="Username"/>
+                        <input type="submit" class="form-control btn btn-primary" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row" id="messageArea">
+            <div class="col-md-2">
+                <p id="current-username"></p>
+                <hr>
+                <p>Connected users:</p>
+                <div id="connected-user"></div>
+            </div>
+            <div class="col-md-10">
+                <div id="chat-body">
+
+                </div>
+
+                <form id="messageForm">
+                    <div class="form-group form-inline">
+                        <input type="text" class="form-control" id="message" autocomplete="off" placeholder="Message"/>
+                        <input type="submit" class="btn btn-primary" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/chatclient.js"></script>
+</body>
+</html>

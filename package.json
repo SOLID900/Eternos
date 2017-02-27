@@ -19,6 +19,11 @@
   "dependencies": {
     "socket.io": "*",
     "express": "*",
-    "pug": "*"
+    "pug": "*",
+    "sanitizer": "*",
+    "jquery": "*",
+    "bootstrap": "3",
+    "linkifyjs": "*",
+    "underscore": "*"
   }
 }

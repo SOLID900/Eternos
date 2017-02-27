@@ -1,2 +1,2 @@
-# Eternos
+# Parlote
 Little chat application
