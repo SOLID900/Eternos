@@ -44,6 +44,7 @@ $usernameForm.submit(function (event) {
 		$messageArea.show();
 		isConnected = true;
 		$currentusername.html("You are <b>" + username + "</b>");
+		$chatBody.append('<div class="chat-element">Welcome! Say <samp>/help</samp> for a list of commands</div>');
 		updateUser();
 	});
 	$usernameinput.val("");
@@ -101,7 +102,7 @@ function executeCommand(command)
 			setToBottom();
 			break;
 		default:
-			$chatBody.append('<tr><td><div class="chat-element"> Command "<i>' + command + '</i>" unknow.</div></td></tr>');
+			$chatBody.append('<div class="chat-element"> Command "<i>' + command + '</i>" unknow.</div>');
 			setToBottom();
 	}
 }
